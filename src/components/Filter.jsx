@@ -2,13 +2,13 @@ import React from "react";
 
 
 const Filter = ({ handleFilter }) => {
-  const handleTitleChange = (event) => {
-    handleFilter("title", event.target.value);
-  };
+  // const handleTitleChange = (event) => {
+  //   handleFilter("title", event.target.value);
+  // };
 
-  const handleRatingChange = (event) => {
-    handleFilter("rating", event.target.value);
-  };
+  // const handleRatingChange = (event) => {
+  //   handleFilter("rating", event.target.value);
+  // };
 
   return (
     <div className="filter flex gap-8 ">
@@ -17,7 +17,8 @@ const Filter = ({ handleFilter }) => {
       className=" placeholder:pl-4 rounded-xl bg-slate-50 border-2 border-black "
         type="text"
         placeholder="By Title"
-        onChange={handleTitleChange}
+        // onChange={handleTitleChange}
+        onChange={(e) => handleFilter('title', e.target.value)}
         
       />
       <input
@@ -27,7 +28,8 @@ const Filter = ({ handleFilter }) => {
         max="10"
         step="0.1"
         placeholder="By rating"
-        onChange={handleRatingChange}
+        // onChange={handleRatingChange}
+        onChange={(e) => handleFilter('rating', e.target.value)}
       />
     </div>
   );
