@@ -12,6 +12,7 @@ const Filter = ({ handleFilter }) => {
 
   return (
     <div className="filter flex gap-8 ">
+      
         <h1>Filter:</h1>
       <input
       className=" placeholder:pl-4 rounded-xl bg-slate-50 border-2 border-black "
