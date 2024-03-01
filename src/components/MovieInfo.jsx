@@ -14,12 +14,12 @@ const MovieInfo = ({ movies }) => {
     <div className="movie-detail flex flex-col gap-2 mt-2">
       <Link to="/" className='text-blue-500 cursor-pointer'>Back to Home</Link>
       <h2 className='text-2xl font-semibold'>{movie.title}</h2>
-      <p> <span className='text-2xl '>Description:</span> {movie.description}</p>
-      <p className="text-lg "><span className='text-2xl'>Rating:</span> {movie.rating}</p>
+      <p className='w-fit leading-8'> <span className='text-2xl font-semibold'>Description:</span> {movie.description}</p>
+      <p className="text-lg "><span className='text-2xl font-semibold'>Rating:</span> {movie.rating}</p>
       <iframe
+      className='lg:w-[560px] lg:h-[315px] w-[300px] h-[200px]'
         title="trailer"
-        width="560"
-        height="315"
+        
         src={movie.videoLink}
         frameBorder="0"
         allowFullScreen

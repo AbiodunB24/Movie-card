@@ -28,14 +28,14 @@ const MovieCard = ({ movie }) => {
   const { title, description, images, rating } = movie;
 
   return (
-    <div  className="container  px-3 lg:px-6 lg:m-2 lg:p-10 text-white rounded-xl transition-all duration-500 bg-gradient-to-br to-white via-black from-red-500 -bottom-1 left-0 group-hover:w-full">
+    <div  className="container  px-2 lg:px-6 lg:m-2 lg:p-10 text-white rounded-xl transition-all duration-500 bg-gradient-to-br to-white via-black from-red-500 -bottom-1 left-0 group-hover:w-full">
       <Link to={`/movie/${encodeURIComponent(movie.title)}`} className="movie-card block w-full">
       <div className="card ">
-      <img src={images} alt={title} className='w-[100%] h-[100%]  object-fill object-center cursor-pointer' />
-      <div className="content hidden lg:block  lg:text-black">
-      <h2 className='text-2xl font-semibold'>{title}</h2>
-      <p className='w-fit'>Description: {description}</p>
-      <p className="text-2xl">Rating: {rating}</p>
+      <img src={images} alt={title} className='w-[100%] h-[100%]   object-fill object-center cursor-pointer' />
+      <div className="content hidden lg:flex lg:flex-col  lg:text-black lg:gap-2">
+      <h2 className='text-2xl font-bold'>{title}</h2>
+      <p className='w-fit'><span className="text-2xl font-semibold ">Description:</span> {description}</p>
+      <p className="text-xl"><span className="font-semibold text-2xl">Rating: </span>{rating}</p>
       </div>
       
       </div>
