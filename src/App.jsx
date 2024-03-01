@@ -127,9 +127,9 @@ const App = () => {
       </Routes>
       
       
-      <div className='flex lg:items-center lg:justify-center'>
+      <div className='flex lg:items-center lg:justify-center mt-10'>
 <form onSubmit={handleSubmit} className='bg-slate-500 px-4 flex flex-col'>
-      <h2 className='uppercase mb-3 text-2xl'>Add a New Movie</h2>
+      <h2 className='uppercase mb-3 text-2xl font-semibold'>Add a New Movie</h2>
       <label>
           Title:
           <input
