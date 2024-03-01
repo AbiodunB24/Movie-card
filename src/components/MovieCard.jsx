@@ -32,10 +32,10 @@ const MovieCard = ({ movie }) => {
       <Link to={`/movie/${encodeURIComponent(movie.title)}`} className="movie-card block w-full">
       <div className="card ">
       <img src={images} alt={title} className='w-[100%] h-[100%]   object-fill object-center cursor-pointer' />
-      <div className="content hidden lg:flex lg:flex-col  lg:text-black lg:gap-2">
-      <h2 className='text-2xl font-bold'>{title}</h2>
-      <p className='w-fit'><span className="text-2xl font-semibold ">Description:</span> {description}</p>
-      <p className="text-xl"><span className="font-semibold text-2xl">Rating: </span>{rating}</p>
+      <div className="content hidden lg:flex lg:flex-col  lg:text-black ">
+      <h2 className='text-xl font-semibold'>{title}</h2>
+      <p className='w-fit'><span className="text-lg font-semibold">Description:</span> {description}</p>
+      <p className=""><span className="font-semibold text-lg">Rating: </span>{rating}</p>
       </div>
       
       </div>
