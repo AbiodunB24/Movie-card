@@ -118,10 +118,7 @@ const App = () => {
   };
   return (
     <div >
-      <nav>
-        <Link to={"/"}/>
-      <h1 className='uppercase text-3xl text-center'>My Movie List</h1>
-      </nav>
+       
       {/* <Filter handleFilter={handleFilter}/> */}
       <Routes>
       <Route path="/" element={<Layout />}/>
@@ -129,13 +126,13 @@ const App = () => {
       <Route path="/movie/:title" element={<MovieInfo movies={movies}/>}/>
       </Routes>
       
-      
+{/*       
       <form onSubmit={handleSubmit} className='bg-slate-500 flex flex-col'>
-      <h2 className='uppercase text-2xl'>Add a New Movie</h2>
+      <h2 className='uppercase mb-3 text-2xl'>Add a New Movie</h2>
       <label>
           Title:
           <input
-          
+          className='bg-slate-200'
             type="text"
             name="title"
             value={formData.title}
@@ -147,6 +144,7 @@ const App = () => {
         <label>
           Description:
           <textarea
+          className='bg-slate-200'
             name="description"
             value={formData.description}
             onChange={handleInputChange}
@@ -157,6 +155,7 @@ const App = () => {
         <label>
           Image:
           <input
+          className='bg-slate-200'
             type="text"
             name="posterURL"
             value={formData.images}
@@ -168,6 +167,7 @@ const App = () => {
         <label>
           Rating:
           <input
+          className='bg-slate-200'
             type="number"
             name="rating"
             min="0"
@@ -180,7 +180,7 @@ const App = () => {
         </label>
         <br />
         <button className='bg-blue-500 w-fit ml-10 rounded-md' type="submit">Add Movie</button>
-      </form>
+      </form> */}
     </div>
   )
 }
