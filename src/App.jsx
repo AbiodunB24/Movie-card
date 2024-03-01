@@ -126,13 +126,15 @@ const App = () => {
       <Route path="/movie/:title" element={<MovieInfo movies={movies}/>}/>
       </Routes>
       
-{/*       
-      <form onSubmit={handleSubmit} className='bg-slate-500 flex flex-col'>
+      
+      <div className='flex items-center justify-center'>
+<form onSubmit={handleSubmit} className='bg-slate-500 px-4 flex flex-col'>
       <h2 className='uppercase mb-3 text-2xl'>Add a New Movie</h2>
       <label>
           Title:
           <input
-          className='bg-slate-200'
+          
+          className='bg-slate-200 w-full'
             type="text"
             name="title"
             value={formData.title}
@@ -144,7 +146,7 @@ const App = () => {
         <label>
           Description:
           <textarea
-          className='bg-slate-200'
+          className='bg-slate-200 w-full'
             name="description"
             value={formData.description}
             onChange={handleInputChange}
@@ -155,7 +157,7 @@ const App = () => {
         <label>
           Image:
           <input
-          className='bg-slate-200'
+          className='bg-slate-200 w-full'
             type="text"
             name="posterURL"
             value={formData.images}
@@ -167,7 +169,7 @@ const App = () => {
         <label>
           Rating:
           <input
-          className='bg-slate-200'
+          className='bg-slate-200 w-full'
             type="number"
             name="rating"
             min="0"
@@ -179,8 +181,9 @@ const App = () => {
           />
         </label>
         <br />
-        <button className='bg-blue-500 w-fit ml-10 rounded-md' type="submit">Add Movie</button>
-      </form> */}
+        <button className='bg-blue-500 w-fit ml-10 p-2 cursor-pointer rounded-md' type="submit">Add Movie</button>
+      </form>
+    </div>
     </div>
   )
 }
